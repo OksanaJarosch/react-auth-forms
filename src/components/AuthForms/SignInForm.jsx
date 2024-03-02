@@ -10,15 +10,9 @@ const schema = Yup.object().shape({
 
 export const SignInForm = () => {
 
-    // const [showPassword, setShowPassword] = useState(false);
-
     const handleLogin = (values) => {
         console.log(values);
     }
-
-    // const handleShowPas = () => {
-    //     return showPassword ? 'text' : 'password';
-    // }
 
     return (
         <>
@@ -28,7 +22,6 @@ export const SignInForm = () => {
                 <StyledGreetings>Welcome! Please enter your credentials to login to the platform:</StyledGreetings>
 
                 <AuthForm schema={schema} handleSubmit={handleLogin} />
-
 
                 <StyledSecondaryText>Don’t have an account? <StyledLink to="/signup">Sign Up</StyledLink></StyledSecondaryText>
             </StyledDiv>
