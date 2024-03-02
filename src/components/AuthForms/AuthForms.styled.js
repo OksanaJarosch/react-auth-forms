@@ -1,5 +1,5 @@
 import { ErrorMessage, Field } from "formik";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { StyledHeader, StyledText } from "../parts/ReusableStyles.styled";
 import { theme } from "../../vars";
 import { Link } from "react-router-dom";
@@ -33,7 +33,6 @@ export const StyledInput = styled(Field)`
     display: block;
     width: 100%;
     height: 46px;
-    margin-top: 18px;
     padding: 14px;
     font-size: 14px;
     line-height: 1.29;
@@ -44,10 +43,18 @@ export const StyledInput = styled(Field)`
     &:hover{
         border: ${theme.border.orange};
     };
+    ${({ error, touched }) => touched && error && css`
+        border-color: red;
+    `}
+    ${({ name, error, touched }) => touched && !error && name === 'email' && css`
+        border-color: green;
+    `}
+    ${({ name, error, touched }) => touched && !error && name === 'password' && css`
+        border-color: green;
+    `}
     @media (min-width: ${theme.breakpoint.md}) {
         width: 307px;
         height: 52px;
-        margin-top: 20px;
         font-size: 16px;
         line-height: 1.5;
     }
@@ -101,4 +108,25 @@ export const StyledSecondaryText = styled.p`
 export const StyledLink = styled(Link)`
     color: ${theme.color.white};
     text-decoration: underline;
+`;
+
+export const StyledEye = styled.button`
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+`;
+
+export const StyledInputWrapper = styled.div`
+    position: relative;
+    display: inline-block;
+`;
+
+export const StyledIFormWrapper = styled.div`
+    display: flex;
+    flex-direction:column;
+    gap: 18px;
+    width: max-content;
 `;
