@@ -11,7 +11,7 @@ export const StyledDiv = styled.div`
     margin-left: auto;
     margin-right: auto;
     @media (min-width: ${theme.breakpoint.md}) {
-        max-width: 496px;
+        max-width: 364px;
     }
 `;
 
@@ -50,13 +50,10 @@ export const StyledInput = styled(Field)`
         border-color: green;
     `}
     @media (min-width: ${theme.breakpoint.md}) {
-        width: 307px;
+        width: 364px;
         height: 52px;
         font-size: 16px;
         line-height: 1.5;
-    }
-    @media (min-width: ${theme.breakpoint.xl}) {
-        width: 310px;
     }
 `;
 
@@ -125,5 +122,7 @@ export const StyledIFormWrapper = styled.div`
     display: flex;
     flex-direction:column;
     gap: 18px;
-    width: max-content;
+    @media (min-width: ${theme.breakpoint.md}) {
+        width: max-content;
+    }
 `;
