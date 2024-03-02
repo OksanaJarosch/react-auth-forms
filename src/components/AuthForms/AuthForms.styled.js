@@ -43,13 +43,10 @@ export const StyledInput = styled(Field)`
     &:hover{
         border: ${theme.border.orange};
     };
-    ${({ error, touched }) => touched && error && css`
+    ${({ error, touched }) => touched === "true" && error === "true" && css`
         border-color: red;
     `}
-    ${({ name, error, touched }) => touched && !error && name === 'email' && css`
-        border-color: green;
-    `}
-    ${({ name, error, touched }) => touched && !error && name === 'password' && css`
+    ${({ error, touched, name }) => touched === "true" && error === "false" && (name === 'email' || name === 'password' || name === 'name') && css`
         border-color: green;
     `}
     @media (min-width: ${theme.breakpoint.md}) {
