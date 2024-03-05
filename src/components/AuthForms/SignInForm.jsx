@@ -21,7 +21,7 @@ export const SignInForm = () => {
                 <StyledTitle>Sign In</StyledTitle>
                 <StyledGreetings>Welcome! Please enter your credentials to login to the platform:</StyledGreetings>
 
-                <AuthForm schema={schema} handleSubmit={handleLogin} />
+                <AuthForm schema={schema} handleSubmit={handleLogin} btnContent="Sign In"/>
 
                 <StyledSecondaryText>Don’t have an account? <StyledLink to="/signup">Sign Up</StyledLink></StyledSecondaryText>
             </StyledDiv>
