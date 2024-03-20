@@ -1,108 +1,49 @@
-# React + Vite template
+# About the Project (En) 
 
-Цей проєкт було створено за допомогою [Create Vite](https://vitejs.dev/). Для
-знайомства і налаштування додаткових можливостей
-[звернися до документації](https://vitejs.dev/guide/).
+This project implements simple yet effective authorization forms, including SignUp (registration) and SignIn (login).
 
-## Створення репозиторію за шаблоном
+! [registration-form] (./src/assets/SignUpForm.png)
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проєкту. Для цього натисни на кнопку `"Use this template"` і
-обери опцію `"Create a new repository"`, як показано на зображенні.
+## Features
 
-![Creating repo from a template step 1](./src/assets/template-step-1.png)
+Authorization Forms: SignUp & SignIn
 
-На наступному кроці відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся що репозиторій публічний, після чого натисни кнопку
-`"Create repository from template"`.
+* __Intuitive Design:__ The forms are clearly structured, allowing users to effortlessly enter their information.
 
-![Creating repo from a template step 2](./src/assets/template-step-2.png)
+* __Dynamic Validation:__ The input fields offer instant feedback to maximize user friendliness. This is made possible by:
 
-Після того як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+    - __Yup Validation Schema:__ A powerful schema validates the inputs in real-time, providing accurate feedback.
+    - __Green Border:__ Indicates that the input is valid and acceptable.
+    - __Red Border:__ Warns the user of an invalid input, allowing for corrections to be made.
 
-![Settings GitHub Actions permissions step 1](./src/assets/gh-actions-perm-1.png)
+* Password Visibility: An "eye" button next to the password field enables users to toggle the visibility of their password input to avoid entry errors.
 
-Проскроливши сторінку до самого кінця, у секції `"Workflow permissions"` вибери
-опцію `"Read and write permissions"` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проєкту.
+## Technology Stack
 
-![Settings GitHub Actions permissions step 2](./src/assets/gh-actions-perm-2.png)
+__Formik & Yup:__ The creation and validation of the forms are powered by the robust libraries Formik and Yup. While Formik facilitates seamless handling of forms in React applications, Yup provides sturdy and flexible validation of form data.
 
-Тепер у тебе є особистий репозиторій проєкту, зі структурою файлів і папок
-репозиторія-шаблону. Далі працюй з ним як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби комміти і відправляй
-їх на GitHub.
 
-## Підготовка до роботи
 
-1. Переконайся, що на комп'ютері встановлена LTS-версія Node.js.
-   [Скачай і встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встановіть базові залежності проекту командою `npm install`.
-3. Запустіть режим розробки, виконавши команду `npm run dev`.
-4. Перейди в браузері за адресою, що зазначено в терміналі.
+# Über das Projekt (De)
 
-## Деплой
+Dieses Projekt implementiert einfache, aber effektive Formulare für die Benutzerautorisierung, einschließlich der Registrierung (SignUp) und Anmeldung (SignIn). Entwickelt mit dem Ziel, die Benutzererfahrung durch intuitive Interaktion und sofortiges Feedback zu verbessern, nutzen diese Formulare die Formik Bibliothek für eine reibungslose und effiziente Dateneingabe und setzen auf die Yup Bibliothek für die Validierung der Eingaben.
 
-Продакшн версія проєкту буде автоматично збиратися і деплоїтися на GitHub Pages,
-у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад, після
-прямого пушу або прийнятого пул-реквесту. Для цього необхідно у файлі
-`vite.config.js` відредагувати поле `base`, замінивши `react_vite` на свою назву
-репозиторію `"/your_repo_name"`, і відправити зміни на GitHub.
+! [Registrierungsform] (./src/assets/SignUpForm.png)
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) і
-виставити роздачу продакшн версії файлів із папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+## Features
 
-![GitHub Pages settings](./src/assets/repo-settings.png)
+Autorisierungsformulare: SignUp & SignIn
 
-### Статус деплоя
+* __Intuitives Design:__ Die Formulare sind klar strukturiert, sodass Benutzer ihre Informationen mühelos eingeben können.
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+* __Dynamische Validierung:__ Die Eingabefelder bieten sofortiges Feedback, um die Benutzerfreundlichkeit zu maximieren. Dies wird ermöglicht durch:
 
-- **Жовтий колір** - виконується збірка і деплой проєкту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час збирання або деплою сталася помилка.
+    - __Yup Validierungsschema:__ Ein leistungsstarkes Schema validiert die Eingaben in Echtzeit und bietet genaue Rückmeldungen.
+    - __Grüner Border:__ Zeigt an, dass die Eingabe gültig und akzeptabel ist.
+    - __Roter Border:__ Warnt den Benutzer bei einer ungültigen Eingabe, sodass Korrekturen vorgenommen werden können.
+    
+* __Passwort Sichtbarkeit:__ Ein "Auge"-Button neben dem Passwortfeld ermöglicht es Benutzern, die Sichtbarkeit ihrer Passworteingabe zu toggeln, um Fehler bei der Eingabe zu vermeiden.
 
-Детальнішу інформацію про статус можна подивитися, клікнувши на іконку, і в
-випадаючому вікні перейти за посиланням `Details`.
+## Technologiestack
 
-![Deployment status](./src/assets/deploy-status.png)
-
-### Жива сторінка
-
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
-адресою, вказаною в налаштуваннях GitHub-репозиторію (`Settings` > `Pages`).
-
-![GitHub-pages URL](./src/assets/gh-pages-url.png)
-
-Якщо відкривається порожня сторінка, переконайся що у вкладці `Console` немає
-помилок пов'язаних із неправильними шляхами до CSS і JS файлів проекту
-(**404**). Швидше за все найімовірніше, у тебе неправильне значення поля `base`
-у файлі `vite.config.js`.
-
-### Маршрутизація
-
-Якщо додаток використовує бібліотеку `react-router-dom` для маршрутизації,
-необхідно додатково налаштувати компонент `<BrowserRouter>`, передавши в пропе
-`basename` точну назву твого репозиторію. Слеш на початку рядка обов'язковий.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-### Додавання змінних в  .env
-Для зберігання конфігураційних даних, таких як API ключі, адреси серверів, порти та інші змінні використовуйте файл `.env`. Для цього необхідно з назви файлу `.env.template` видалити зайві ".template",після чого файл відповідатиме умовам файлу `.ignore` і буде зберігатися лише локально, не публікуючись на віддаленому репозиторії з метою безпеки. Задля використання змінних на GitHub-pages усі змінні, передбачені файлом .env, слід додати до файлу `.github/workflows/deploy.yml`, а також до налаштувань репозиторію. Для цього слід перейти (`Settings` > `Secrets and variables` > `Actions`)
-
-![Add enviroments from .env](./src/assets/secrets.png)
-
-## Як це працює
-
-1. Після кожного пушу в гілку `main` GitHub-репозиторію, запускається
-   спеціальний скрипт (GitHub Action) з файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проєкт ініціалізується і
-   проходить збірку перед деплоєм. 3 Якщо всі кроки пройшли успішно, зібрана
-   продакшн-версія файлів проєкту відправляється в гілку `gh-pages`. В іншому
-   випадку, в логах виконання скрипта буде вказано в чому проблема.
+__Formik & Yup:__ Für die Erstellung und Validierung der Formulare wurden die leistungsfähigen Bibliotheken Formik und Yup eingesetzt. Während Formik eine nahtlose Handhabung von Formularen in React-Anwendungen ermöglicht, sorgt Yup für eine robuste und flexible Validierung der Formulardaten.
