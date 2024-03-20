@@ -2,9 +2,9 @@ import {
   HeaderContainer,
   Navigation,
   StyledLink,
-  IconWrapper,
+
 } from './Header.styled';
-import sprite from 'assets/sprite.svg';
+
 
 export const Header = () => {
 
@@ -12,15 +12,15 @@ export const Header = () => {
     <HeaderContainer>
       <Navigation>
         <StyledLink to="/signup">
-          <IconWrapper>
+          {/* <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
+          </IconWrapper> */}
           Sign Up
         </StyledLink>
         <StyledLink to="/signin">
-          <IconWrapper>
+          {/* <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
+          </IconWrapper> */}
           Sign In
         </StyledLink>
       </Navigation>
