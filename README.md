@@ -2,7 +2,7 @@
 
 This project implements simple yet effective authorization forms, including SignUp (registration) and SignIn (login).
 
-! [registration-form] (./src/assets/SignUpForm.png)
+![registration-form](./src/assets/SignUpForm.png)
 
 ## Features
 
@@ -28,7 +28,7 @@ __Formik & Yup:__ The creation and validation of the forms are powered by the ro
 
 Dieses Projekt implementiert einfache, aber effektive Formulare für die Benutzerautorisierung, einschließlich der Registrierung (SignUp) und Anmeldung (SignIn). Entwickelt mit dem Ziel, die Benutzererfahrung durch intuitive Interaktion und sofortiges Feedback zu verbessern, nutzen diese Formulare die Formik Bibliothek für eine reibungslose und effiziente Dateneingabe und setzen auf die Yup Bibliothek für die Validierung der Eingaben.
 
-! [Registrierungsform] (./src/assets/SignUpForm.png)
+![Registrierungsform](./src/assets/SignUpForm.png)
 
 ## Features
 
